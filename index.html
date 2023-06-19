@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/earlyaccess/kokoro.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo.png" type="icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+
+  <body>
+    <audio id="cloud" src="sounds/cloud.mp3"></audio>
+    <audio id="fire" src="sounds/fire.mp3"></audio>
+    <audio id="flowers" src="sounds/flowers.mp3"></audio>
+    <audio id="forest" src="sounds/forest.mp3"></audio>
+    <audio id="lake" src="sounds/lake.mp3"></audio>
+    <audio id="leaf" src="sounds/leaf.mp3"></audio>
+    <audio id="moon" src="sounds/moon.mp3"></audio>
+    <audio id="mountains" src="sounds/mountains.mp3"></audio>
+    <audio id="rain" src="sounds/rain.mp3"></audio>
+    <audio id="rainbow" src="sounds/rainbow.mp3"></audio>
+    <audio id="river" src="sounds/river.mp3"></audio>
+    <audio id="rock" src="sounds/rock.mp3"></audio>
+    <audio id="sky" src="sounds/sky.mp3"></audio>
+    <audio id="star" src="sounds/star.mp3"></audio>
+    <audio id="storm" src="sounds/storm.mp3"></audio>
+    <audio id="sun" src="sounds/sun.mp3"></audio>
+    <audio id="tree" src="sounds/tree.mp3"></audio>
+
+    <h1>Weather</h1>
+    <div class="container">
+      <!-- cloud -->
+      <div class="text">
+        <h3 class="text-title">Cloud</h3>
+        <a onclick="document.getElementById('cloud').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1601370552761-d129028bd833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80"
+          />
+          <p class="img__description">くも</p>
+        </div>
+      </div>
+      <!-- cloud end -->
+
+      <!-- fire -->
+      <div class="text">
+        <h3 class="text-title">Fire</h3>
+        <a onclick="document.getElementById('fire').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1523861751938-121b5323b48b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1162&q=80"
+          />
+          <p class="img__description">ひ</p>
+        </div>
+      </div>
+      <!-- fire end -->
+
+      <!-- flowers -->
+      <div class="text">
+        <h3 class="text-title">Flowers</h3>
+        <a onclick="document.getElementById('flowers').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1532211387405-12202cb81d7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">はな</p>
+        </div>
+      </div>
+      <!-- flowers end -->
+
+      <!-- forest -->
+      <div class="text">
+        <h3 class="text-title">Forest</h3>
+        <a onclick="document.getElementById('forest').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+          />
+          <p class="img__description">もり</p>
+        </div>
+      </div>
+      <!-- forest end -->
+
+      <!-- lake -->
+      <div class="text">
+        <h3 class="text-title">Lake</h3>
+        <a onclick="document.getElementById('lake').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1583244685026-d8519b5e3d21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">みずうみ</p>
+        </div>
+      </div>
+      <!-- lake end -->
+
+      <!-- leaf -->
+      <div class="text">
+        <h3 class="text-title">Leaf</h3>
+        <a onclick="document.getElementById('leaf').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1605954504017-d4b915908c9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+          />
+          <p class="img__description">はっぱ</p>
+        </div>
+      </div>
+      <!-- leaf end -->
+
+      <!-- moon -->
+      <div class="text">
+        <h3 class="text-title">Moon</h3>
+        <a onclick="document.getElementById('moon').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80"
+          />
+          <p class="img__description">つき</p>
+        </div>
+      </div>
+      <!-- moon end -->
+
+      <!-- mountains -->
+      <div class="text">
+        <h3 class="text-title">Mountains</h3>
+        <a onclick="document.getElementById('mountains').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80"
+          />
+          <p class="img__description">やま</p>
+        </div>
+      </div>
+      <!-- mountains end -->
+
+      <!-- rain -->
+      <div class="text">
+        <h3 class="text-title">Rain</h3>
+        <a onclick="document.getElementById('rain').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1428592953211-077101b2021b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+          />
+          <p class="img__description">あめ</p>
+        </div>
+      </div>
+      <!-- rain end -->
+
+      <!-- rainbow -->
+      <div class="text">
+        <h3 class="text-title">Rainbow</h3>
+        <a onclick="document.getElementById('rainbow').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1437915219556-8c287594737a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">にじ</p>
+        </div>
+      </div>
+      <!-- rainbow end -->
+
+      <!-- river -->
+      <div class="text">
+        <h3 class="text-title">River</h3>
+        <a onclick="document.getElementById('river').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1451903978882-b165bd94e45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">かわ</p>
+        </div>
+      </div>
+      <!-- river end -->
+
+      <!-- rock -->
+      <div class="text">
+        <h3 class="text-title">Rock</h3>
+        <a onclick="document.getElementById('rock').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1582148405586-fb5af4396bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">いわ</p>
+        </div>
+      </div>
+      <!-- rock end -->
+
+      <!-- sky -->
+      <div class="text">
+        <h3 class="text-title">Sky</h3>
+        <a onclick="document.getElementById('sky').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1544829728-e5cb9eedc20e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">そら</p>
+        </div>
+      </div>
+      <!-- sky end -->
+
+      <!-- star -->
+      <div class="text">
+        <h3 class="text-title">Star</h3>
+        <a onclick="document.getElementById('star').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">ほし</p>
+        </div>
+      </div>
+      <!-- star end -->
+
+      <!-- storm -->
+      <div class="text">
+        <h3 class="text-title">Storm</h3>
+        <a onclick="document.getElementById('storm').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1544436825-d2e15fe38e20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">あらし</p>
+        </div>
+      </div>
+      <!-- storm end -->
+
+      <!-- sun -->
+      <div class="text">
+        <h3 class="text-title">Sun</h3>
+        <a onclick="document.getElementById('sun').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1598965914211-6ec6872593a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+          />
+          <p class="img__description">たいよう</p>
+        </div>
+      </div>
+      <!-- sun end -->
+
+      <!-- tree -->
+      <div class="text">
+        <h3 class="text-title">Tree</h3>
+        <a onclick="document.getElementById('tree').play();"
+          ><i id="icon" class="fas fa-volume-up"></i
+        ></a>
+        <button class="text-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <div class="text-img">
+          <img
+            class="text-img"
+            src="https://images.unsplash.com/photo-1458966480358-a0ac42de0a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          />
+          <p class="img__description">き</p>
+        </div>
+      </div>
+      <!-- tree end -->
+    </div>
+
+    <!-- container end -->
+    <script src="script.js"></script>
+  </body>
+</html>
